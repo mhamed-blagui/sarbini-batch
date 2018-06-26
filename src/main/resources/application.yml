@@ -1,0 +1,17 @@
+server: 
+      port: 9093
+max:
+    threads: 20
+spring:
+      datasource:
+          driverClassName: oracle.jdbc.OracleDriver
+          password: sarbini_batch
+          url: jdbc:oracle:thin:@localhost:1521/XE
+          username: sarbini_batch
+      batch:
+             job:
+                 enabled: false    
+      jpa:
+          hibernate: 
+                    ddl-auto: update
+          show-sql: false
